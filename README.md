@@ -1,0 +1,1 @@
+Building my own blog site with Django. Starting off by following the Django Girls tutorial here https://tutorial.djangogirls.org/en/
