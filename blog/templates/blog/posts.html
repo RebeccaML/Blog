@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rebecca's Blog</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <h1><a href="/">Rebecca's Blog</a></h1>
+    <div>
+        {% for post in posts %}
+            <h2><a href="">{{post.title }}</a></h2>
+            <p>{{ post.published_date }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
