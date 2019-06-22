@@ -1,3 +1,9 @@
 myblogsite-venv/
-myblogsite/.env
+*.env
 .vscode/
+db.sqlite3
+*.pyc
+blog/migrations/
+__pycache__
+/static
+*~
