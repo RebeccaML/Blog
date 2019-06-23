@@ -37,6 +37,7 @@
     <div class="container-fluid">
         {% if user.is_authenticated %}
             <a href="{% url 'post_new' %}"><button class="btn new">New Post</button></a>
+            <a href="{% url 'drafts' %}"><button class="btn draft">View Drafts</button></a>
         {% endif %}
         <div class="row">
             <div class="col-md-10">
