@@ -49,10 +49,6 @@ header {
     padding-bottom: 0;
 }
 
-.main {
-    padding: 0 30px;
-}
-
 .greeting {
     display: inline-block;
 }
@@ -71,12 +67,17 @@ header {
     width: 100%;
 }
 
-.login-form tr {
-    width: 50%;
+.login-form table {
+    margin: auto;
+}
+
+.login-form input {
+    margin: 5px;
 }
 
 .login-form .login {
-    margin: 10px 80px;
+    display: block;
+    margin: 10px auto;
 }
 
 .social-media {
