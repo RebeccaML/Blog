@@ -55,7 +55,7 @@ header {
     float: right;
 }
 
-.save, .edit, .publish {
+.save, .edit, .publish, .remove {
     border: 1px solid purple;
 }
 
