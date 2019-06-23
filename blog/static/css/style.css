@@ -49,7 +49,12 @@ header {
     padding-bottom: 0;
 }
 
-.new, .draft {
+.greeting {
+    display: inline-block;
+    float: right;
+}
+
+.new, .draft, .login {
     border: 1px solid purple;
     margin-bottom: 10px;
     float: right;
