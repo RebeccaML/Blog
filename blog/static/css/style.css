@@ -49,23 +49,34 @@ header {
     padding-bottom: 0;
 }
 
+.main {
+    padding: 0 30px;
+}
+
 .greeting {
     display: inline-block;
-    float: right;
 }
 
-.new, .draft, .login {
+.sidebar button {
     border: 1px solid purple;
     margin-bottom: 10px;
-    float: right;
+    width: 100%;
 }
 
-.save, .edit, .publish, .remove {
+.save, .edit, .publish, .remove, .login-form .login {
     border: 1px solid purple;
 }
 
 .post-form input, textarea {
     width: 100%;
+}
+
+.login-form tr {
+    width: 50%;
+}
+
+.login-form .login {
+    margin: 10px 80px;
 }
 
 .social-media {
@@ -74,6 +85,14 @@ header {
 }
 .social-media a {
     padding: 0 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.post {
+    padding-bottom: 30px;
 }
 
 footer {
