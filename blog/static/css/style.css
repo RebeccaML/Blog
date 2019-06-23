@@ -45,9 +45,26 @@ header {
     padding-bottom: 0;
 }
 
+.new {
+    border: 1px solid purple;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.save, .edit {
+    border: 1px solid purple;
+}
+
+.post-form input, textarea {
+    width: 100%;
+}
+
 .social-media {
     text-align: right;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+}
+.social-media a {
+    padding: 0 10px;
 }
 
 footer {
@@ -55,8 +72,11 @@ footer {
     border-top: 2px solid purple;
     font-size: 1.2em;
     color: purple;
-    margin: 0 20px;
 }
+footer.row {
+    margin: 0;
+
+} 
  footer div {
      padding-top: 10px;
  }
