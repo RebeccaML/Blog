@@ -59,7 +59,7 @@ header {
     width: 100%;
 }
 
-.save, .edit, .publish, .remove, .add-comment, .login-form .login {
+.save, .edit, .publish, .remove, .add-comment, .approve-comment, .remove-comment, .login-form .login {
     border: 1px solid purple;
 }
 
