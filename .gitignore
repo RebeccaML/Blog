@@ -3,6 +3,5 @@ myblogsite-venv/
 .vscode/
 db.sqlite3
 *.pyc
-blog/migrations/
 __pycache__
 *~
