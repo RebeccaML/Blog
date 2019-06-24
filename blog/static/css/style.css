@@ -59,7 +59,7 @@ header {
     width: 100%;
 }
 
-.save, .edit, .publish, .remove, .login-form .login {
+.save, .edit, .publish, .remove, .add-comment, .login-form .login {
     border: 1px solid purple;
 }
 
@@ -94,6 +94,10 @@ header {
 
 .post {
     padding-bottom: 30px;
+}
+
+.comment {
+    padding-top: 10px;
 }
 
 footer {
