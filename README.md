@@ -9,22 +9,19 @@ Things I've added outside the tutorial:
 
 -I did all my own CSS/HTML.
 
--I added an 'about' page.
+-Added an 'about' page.
 
--I added a footer and a navigation bar (currently only Home/About work).
+-Added a footer and a navigation bar (currently only Home/About work).
 
--I truncated blog posts on the main page to 100 words.
+-Truncated blog posts on the main page to 100 words.
 
--I adjusted the URLs to include slugs (though I'm currently working out how to just display the slug and only keep the pk as a reference)
+-Adjusted the URLs to include slugs
 
+-Made it possible to include html in blog posts
 
 Things to do (roughly in order):
 
--Fix the couple of pylint errors. Not sure why they're there and they don't seem to affect how the site runs but I should at least look into what they mean.
-
 -Improve appearance, maybe add some JS.
-
--There has to be a way to do some HTML within posts, mostly for links. So work out how to do that.
 
 -Add custom error pages.
 

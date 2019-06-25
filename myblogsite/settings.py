@@ -135,11 +135,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
-
-# Bleach config
-
-# Which HTML tags are allowed
-BLEACH_ALLOWED_TAGS = ['p', 'b', 'i', 'u', 'em', 'strong', 'a', 'code']
-
-# Which HTML attributes are allowed
-BLEACH_ALLOWED_ATTRIBUTES = ['href', 'target', 'title', 'class']
