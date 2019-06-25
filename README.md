@@ -13,6 +13,8 @@ Things I've added outside the tutorial:
 
 -I added a footer and a navigation bar (currently only Home/About work).
 
+-I truncated blog posts on the main page to 100 words.
+
 -I adjusted the URLs to include slugs (though I'm currently working out how to just display the slug and only keep the pk as a reference)
 
 
