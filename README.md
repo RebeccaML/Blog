@@ -9,9 +9,9 @@ Things I've added outside the tutorial:
 
 -I did all my own CSS/HTML.
 
--Added an 'about' page.
+-Added an 'about' page and 'coming soon' pages for upcoming content.
 
--Added a footer and a navigation bar (currently only Home/About work).
+-Added a footer and a navigation bar.
 
 -Truncated blog posts on the main page to 100 words.
 
@@ -25,15 +25,15 @@ Things to do (roughly in order):
 
 -Add custom error pages.
 
--Add categories to posts.
+-Add tags to posts.
 
--Add search to posts.
+-Add search to posts (search by tag or title)
 
 -Add resources page. This will probably be another Django app. It will be a list of links to sites that teach you programming/web design stuff.
     Each link will have a brief description and a category which will be used in a search function.
 
--Add contact page. Probably just a form that sends to my email.
+-Add contact page. Probably just a form that sends to my email. Maybe a link to my resume.
 
 -Create a proper home page. Will display posts but have an intro section above. Then there'll be a new navigation link for 'Blog' which goes to the posts.
 
--Add some kind of 'I'm not a robot' authentication in order to post a comment. Currently I have to approve comments before they are displayed which is not ideal.
+-Add some kind of 'I'm not a robot' authentication in order to post a comment. Currently I have to approve comments before they are displayed which is not ideal, but it's also not ideal to have spam. 
