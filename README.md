@@ -39,4 +39,4 @@ Things to do (roughly in order):
 
 -Create a proper home page. Will display posts but have an intro section above. Then there'll be a new navigation link for 'Blog' which goes to the posts.
 
--Allow people to register and make an account. They'll need an account to post comments. Currently, comments must be approved by me before being shown which is not ideal.
+-Add some kind of 'I'm not a robot' authentication in order to post a comment. Currently I have to approve comments before they are displayed which is not ideal.
