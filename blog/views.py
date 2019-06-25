@@ -13,6 +13,9 @@ from .forms import CommentForm
 def about(request):
     return render(request, 'blog/about.html')
 
+def coming_soon(request):
+    return render(request, 'blog/coming_soon.html')
+
 class PostListView(generic.ListView):
     model = Post
     template_name = 'blog/posts.html'
