@@ -13,6 +13,9 @@ Things I've added outside the tutorial:
 
 -I added a footer and a navigation bar (currently only Home/About work).
 
+-I adjusted the URLs to include slugs (though I'm currently working out how to just display the slug and only keep the pk as a reference)
+
+
 Things to do (roughly in order):
 
 -Fix the couple of pylint errors. Not sure why they're there and they don't seem to affect how the site runs but I should at least look into what they mean.
