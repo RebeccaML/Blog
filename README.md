@@ -7,17 +7,17 @@ https://tutorial-extensions.djangogirls.org/en/
 
 Things I've added outside the tutorial:
 
--I did all my own CSS/HTML.
+-I did all my own CSS/HTML including a footer and navigation bar.
 
 -Added an 'about' page and 'coming soon' pages for upcoming content.
 
--Added a footer and a navigation bar.
-
--Truncated blog posts on the main page to 100 words.
+-Truncated blog posts on the main page to 100 words and reversed the order so the newest post shows first.
 
 -Adjusted the URLs to include slugs
 
 -Made it possible to include html in blog posts
+
+-Added a new Category field to the Post model, which is itself a model. Posts can have multiple categories.
 
 Things to do (roughly in order):
 

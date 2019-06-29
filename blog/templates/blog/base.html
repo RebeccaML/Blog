@@ -51,6 +51,12 @@
                 <li><a href="{% url 'login' %}"><button class="btn login">Login</button></a></li>
             {% endif %}
                     </ul>
+                    <h3>Categories</h3>
+                    <ul>
+                        {% for category in categorys %}
+                        <li> {{ category }}</li>
+                        {% endfor %}
+                    </ul>
                 </div>
         </div>
     </div>
