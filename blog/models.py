@@ -3,6 +3,13 @@ from django.conf import settings
 from django.utils import timezone
 from django.urls import reverse
 
+class Category(models.Model):
+    name = models.CharField(
+        max_length=200, help_text='Enter a category')
+
+    def __str__(self):
+        return self.name
+
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
@@ -10,6 +17,7 @@ class Post(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
+    category = models.ManyToManyField(Category, help_text='Select a category for this post')
 
     def publish(self):
         self.published_date = timezone.now()
@@ -20,6 +28,11 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('post_detail', args=[str(self.id), self.slug])
+
+    def display_category(self):
+        return ', '.join(category.name for category in self.category.all()[:3])
+
+    display_category.short_description = 'Category'
 
     def __str__(self):
         return self.title
