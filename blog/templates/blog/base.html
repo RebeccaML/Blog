@@ -42,22 +42,24 @@
                 {% endblock %}
             </div>
             <div class="col-md-2 sidebar">
-                    <ul>
-            {% if user.is_authenticated %}
-                <li><p class="greeting">Hello {{ user.username }} (<a href="{% url 'logout' %}">Log out</a>)</p></li>
-                <li><a href="{% url 'post_new' %}"><button class="btn new">New Post</button></a></li>
-                <li><a href="{% url 'drafts' %}"><button class="btn draft">View Drafts</button></a></li>
-            {% else %}
-                <li><a href="{% url 'login' %}"><button class="btn login">Login</button></a></li>
-            {% endif %}
-                    </ul>
-                    <h3>Categories</h3>
-                    <ul>
-                        {% for category in categorys %}
-                        <li> {{ category }}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
+                <ul>
+                    {% if user.is_authenticated %}
+                    <li>
+                        <p class="greeting">Hello {{ user.username }} (<a href="{% url 'logout' %}">Log out</a>)</p>
+                    </li>
+                    <li><a href="{% url 'post_new' %}"><button class="btn new">New Post</button></a></li>
+                    <li><a href="{% url 'drafts' %}"><button class="btn draft">View Drafts</button></a></li>
+                    {% else %}
+                    <li><a href="{% url 'login' %}"><button class="btn login">Login</button></a></li>
+                    {% endif %}
+                </ul>
+                <h3>Categories</h3>
+                <ul>
+                    {% for category in categories %}
+                    <li> {{ category }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
     <footer class="row">
@@ -66,9 +68,11 @@
         </div>
         <div class="col-md-6">
             <p class="social-media">
-                <a href="https://www.facebook.com/rebecca.mcmahon.790" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.facebook.com/rebecca.mcmahon.790" target="_blank"><i
+                        class="fab fa-facebook-square"></i></a>
                 <a href="https://github.com/RebeccaML" target="_blank"><i class="fab fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/rebecca-lowe-5b2388188" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/rebecca-lowe-5b2388188" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
             </p>
         </div>
     </footer>

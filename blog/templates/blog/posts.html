@@ -5,7 +5,7 @@
             <h2><a href="{% url 'post_detail' pk=post.pk slug=post.slug %}">{{post.title }}</a></h2>
             <p>
             {% for category in post.category.all %}
-            <span class="category">{{ category }}</span>
+            <span class="category">{{ category }}</span> 
             {% endfor %}
             </p>
             <p class="date">{{ post.published_date }}</p>
