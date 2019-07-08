@@ -19,7 +19,7 @@ def coming_soon(request):
 class PostListView(generic.ListView):
     model = Post
     template_name = 'blog/posts.html'
-    paginate_by = 10
+    paginate_by = 5
 
     def get_queryset(self):
      return Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
